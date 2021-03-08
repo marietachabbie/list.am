@@ -5,16 +5,6 @@ require('dotenv/config');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-app.use(cors());
-app.use(bodyParser.json());
-
-const postsRoute = require('./routes/posts')
-app.use('/posts', postsRoute);
-
-app.get('/', (req, res) => {
-    res.send('yoohoo!!');
-});
-
 mongoose.connect(
     process.env.DB_CONNECTION,
     {
@@ -28,5 +18,16 @@ mongoose.connect(
             console.log('Succesfuly connected to DB!');
     }
 );
+
+app.use(cors());
+app.use(bodyParser.json());
+
+const postsRoute = require('./routes/posts')
+app.use('/posts', postsRoute);
+
+app.get('/', (req, res) => {
+    res.send('yoohoo!!');
+});
+
 
 app.listen(3000);

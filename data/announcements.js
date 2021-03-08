@@ -480,6 +480,5 @@ let announcements = [
         'sellerName':'Աշոտ',
         'sellerPhotoLink': 'https://bit.ly/3eryxp1',
         'category':'Տան պարագաներ',
-    },
+    }
 ]
-
