@@ -1,7 +1,15 @@
 const express = require('express');
 const app = express();
-const mongoose = require('mongoose')
-require('dotenv/config')
+const mongoose = require('mongoose');
+require('dotenv/config');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+
+app.use(cors());
+app.use(bodyParser.json());
+
+const postsRoute = require('./routes/posts')
+app.use('/posts', postsRoute);
 
 app.get('/', (req, res) => {
     res.send('yoohoo!!');
@@ -9,30 +17,16 @@ app.get('/', (req, res) => {
 
 mongoose.connect(
     process.env.DB_CONNECTION,
-    { useUnifiedTopology: true },
-    { useNewUrlParser: true },
-    () => console.log('Succesfuly connected to DB!')
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    },
+    (err) => {
+        if(err)
+            console.log(err);
+        else
+            console.log('Succesfuly connected to DB!');
+    }
 );
 
 app.listen(3000);
-
-
-
-
-// generating IDs for announcements with random chars and nums
-
-// const chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
-// const getRandomInt = function (min, max) {
-//     min = Math.ceil(min);
-//     max = Math.floor(max);
-//     return Math.floor(Math.random() * (max - min) + min);
-// }
-
-// const generateID = function(){
-//     let res = '';
-//     for(let i = 0; i < 8; i++){
-//         let j = getRandomInt(0, 36);
-//         res += chars[j];
-//     };
-//     return res;
-// }
