@@ -1,18 +1,32 @@
+const mongoose = require('mongoose');
+const util = require('../data/util');
+const assignAnnouncementNumber = util.assignAnnouncementNumber;
+let currentNumberOfAnnouncements = util.currentNumberOfAnnouncements;
+let existedAnnouncements = require('../data/announcements');
+
+assignAnnouncementNumber(existedAnnouncements, currentNumberOfAnnouncements);
+
 const Schema = mongoose.Schema;
-
 const AnnouncementSchema = new Schema({
-    
+    header: String,
+    description: String,
+    photoLink: String,
+    status: String,
+    category: String,
+    price: String,
+    location: String,
+    publicationDate: String,
+    lastUpdated: String,
+    sellerName: String,
+    sellerPhotoLink: String,
+    postNumber: Number,
 });
-const PostModel = mongoose.model('Posts', PostSchema);
 
-PostModel.create(posts, function (err) {
-    if (err) return handleError(err);
-    console.log('Posts is created!');
-});
+AnnouncementModel = mongoose.model('Announcements', AnnouncementSchema);
 
-// 15737110
-const assignAnnNumber = function(annList, startNumber){
-    for(let i = 0; i < annList.length; i++){
-        annList[i][postNumber] = startNumber + i;
-    }
+module.exports = function(){
+    AnnouncementModel.create(existedAnnouncements, function (err) {
+        if (err) console.log(err);
+        console.log('Announcements collection is created!');
+    })
 }

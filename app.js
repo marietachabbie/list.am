@@ -1,9 +1,10 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-require('dotenv/config');
+const createAndInsertAnnouncements = require('./models/Announcements');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+require('dotenv/config');
 
 mongoose.connect(
     process.env.DB_CONNECTION,
@@ -29,5 +30,5 @@ app.get('/', (req, res) => {
     res.send('yoohoo!!');
 });
 
-
+// createAndInsertAnnouncements();
 app.listen(3000);
