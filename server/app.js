@@ -23,11 +23,11 @@ mongoose.connect(
 app.use(cors());
 app.use(bodyParser.json());
 
-const postsRoute = require('./routes/posts')
-app.use('/posts', postsRoute);
+const postsRoute = require('./routes/antiquities')
+// app.use('/posts', postsRoute); ????????????????
 
-app.get('/', (req, res) => {
-    res.send('yoohoo!!');
+app.get('/announcements/antiquities', (req, res) => {
+    res.send('Here you see all antiquities on sale!!');
 });
 
 // createAndInsertAnnouncements();

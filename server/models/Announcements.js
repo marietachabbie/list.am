@@ -24,7 +24,7 @@ const AnnouncementSchema = new Schema({
 
 AnnouncementModel = mongoose.model('Announcements', AnnouncementSchema);
 
-module.exports = function(){
+module.exports = () => {
     AnnouncementModel.create(existedAnnouncements, function (err) {
         if (err) console.log(err);
         console.log('Announcements collection is created!');
