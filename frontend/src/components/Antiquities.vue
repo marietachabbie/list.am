@@ -1,7 +1,6 @@
 <template>
     <div class="container">
         <LeftMenu />
-
         <p class="error" v-if="error">{{ error }}</p>
         <div class="posts-container">
             <div class="post"
