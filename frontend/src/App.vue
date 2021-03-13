@@ -1,16 +1,19 @@
 <template>
     <div id="app">
+        <Navbar />
         <Antiquities />
     </div>
 </template>
 
 <script>
-import Antiquities from './components/Antiquities'
+import Antiquities from './components/Antiquities';
+import Navbar from './components/Navbar';
 
 export default {
     name: 'App',
     components: {
         Antiquities,
+        Navbar,
     }
 }
 </script>
@@ -20,8 +23,7 @@ export default {
         font-family: Avenir, Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        text-align: center;
         color: #2c3e50;
-        margin-top: 60px;
+        background-color: #F7F7F7;
     }
 </style>
