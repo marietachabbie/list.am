@@ -22,11 +22,14 @@ const AnnouncementSchema = new Schema({
     postNumber: Number,
 });
 
-AnnouncementModel = mongoose.model('Announcements', AnnouncementSchema);
+let Announcements = mongoose.model('Announcements', AnnouncementSchema);
 
-module.exports = () => {
-    AnnouncementModel.create(existedAnnouncements, function (err) {
-        if (err) console.log(err);
-        console.log('Announcements collection is created!');
-    })
+module.exports = {
+    Announcements: Announcements,
+    createAndInsert: () => {
+        Announcements.create(existedAnnouncements, function (err) {
+            if (err) console.log(err);
+            console.log('Announcements collection is created!');
+        })
+    }
 }
