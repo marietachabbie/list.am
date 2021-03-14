@@ -1,6 +1,5 @@
 <template>
     <div class="container">
-        <LeftMenu />
         <p class="error" v-if="error">{{ error }}</p>
         <div class="posts-container">
             <div class="post"
@@ -18,8 +17,6 @@
 </template>
 
 <script>
-import PostService from '../PostService';
-import LeftMenu from './LeftMenu';
 
 export default {
     name: 'Antiquities',
@@ -28,9 +25,6 @@ export default {
             posts: [],
             error: ''
         }
-    },
-    components: {
-        LeftMenu,
     },
     async created() {
         try {

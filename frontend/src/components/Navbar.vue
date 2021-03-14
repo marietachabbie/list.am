@@ -1,10 +1,9 @@
 <template>
-    <div class="container" >
+    <div class="container">
         <div id="vue-top-navbar-wrapper"
         class="ui fixed menu"
-        style="padding: 0 120px 0 120px;
-        height: 30px;
-        margin-top: 10px;
+        style="padding: 10px 120px 0 120px;
+        height: 50px;
         border-style: none;"
         >
             <div style="margin: 5px">
@@ -30,14 +29,14 @@
                 />
             </div>
             
-            <div class="right menu"
-            >
+            <div class="right menu">
                 <a href="#"
                 style="font-size:14px;
                 padding: 10px;"
                 >
                     Իմ էջը
                 </a>
+
                 <a href="#"
                 style="background-color: #0e72ea;
                 color: white;
@@ -51,12 +50,19 @@
                 </a>
             </div>
         </div>
+
+        <Dropdowns />
     </div>
 </template>
 
 <script>
+import Dropdowns from './Dropdowns';
+
 export default {
     name: 'Navbar',
+    components: {
+        Dropdowns,
+    }
 }
 </script>
 
