@@ -2,37 +2,50 @@
     <div class="container" >
         <div id="vue-top-navbar-wrapper"
         class="ui fixed menu"
-        style="padding: 0 100px 0 100px;
-        height: 40px;
+        style="padding: 0 120px 0 120px;
+        height: 30px;
         margin-top: 10px;
         border-style: none;"
         >
-            <div class="item">
+            <div style="margin: 5px">
                 <img class="ui image" src="https://i.ibb.co/mFnGdC6/list-am-logo-1.jpg"
                 height="30px" alt="list-am-logo">
             </div>
-            <sui-input transparent
-            placeholder="Որոնում"
-            icon-position="left"
-            icon="search"
-            style="background-color: #f1f1f1;
-            width: 500px;
-            border-radius: 15px;
-            font-size: 16px;
-            "
-            />
+            <div class="input"
+            style="font-size: 14px;
+            background-color: #f1f1f1;
+            border-radius: 35px;
+            margin: 5px;
+            padding: 5px 10px;"
+            >
+                <i class="fa fa-search"
+                style="color:grey;
+                margin-right: 5px;"></i>
+                <input
+                placeholder="Որոնում"
+                style="width: 500px;
+                border-style: none;
+                outline: none;
+                background-color:transparent;"
+                />
+            </div>
+            
             <div class="right menu"
             >
-                <a class="item" href="#"
-                    style="font-size:16px;"
+                <a href="#"
+                style="font-size:14px;
+                padding: 10px;"
                 >
                     Իմ էջը
                 </a>
-                <a class="item" href="#"
+                <a href="#"
                 style="background-color: #0e72ea;
                 color: white;
-                font-size: 16px;
-                border-radius: 15px;"
+                font-size: 14px;
+                border-radius: 35px;
+                width: 230px;
+                padding: 5px 0 0 15px;
+                margin: 5px 0 5px 0;"
                 >
                 Տեղադրել հայտարարություն
                 </a>
