@@ -101,4 +101,7 @@ export default {
         color: #2c3e50;
         background-color: #f1f1f1;
     }
+    a {
+        color: #707073;
+    }
 </style>

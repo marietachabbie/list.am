@@ -63,8 +63,8 @@
             Կատեգորիաներ<br>
             <a href="#" style="padding-left: 20px;">Մշակույթ և հոբբի</a><br>
             <div id="list">
-                <p style="color: #5b5b5c">Հնաոճ իրեր և արվեստ</p>
-                <p style="padding-left: 20px; font-weight: bold">Հավաքածուներ</p>
+                <span style="font-weight: bold; color: #707073">Հնաոճ իրեր և արվեստ</span><br>
+                <span style="padding-left: 20px; font-weight: bold">Հավաքածուներ</span><br>
                 <a href="#">Նկարչություն և նկարներ</a><br>
                 <a href="#">Արվեստի առարկաներ</a><br>
                 <a href="#">Արհեստ և ձեռագործություն</a><br>
@@ -96,14 +96,10 @@ export default {
         border-top-right-radius: 10px;
         padding-top: 5px;
     }
-    #locations {
-        
-    }
-    #price {
-    }
     #categories {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+        line-height: 1.8;
     }
     #list {
         padding-left: 40px;
@@ -111,6 +107,12 @@ export default {
     #statuses, #locations, #price, #categories {
         margin: 10px 0 0 0;
     }
-
+    a {
+        color: black;
+        
+    }
+    a:link {
+        text-decoration: none;
+    }
 </style>
 
