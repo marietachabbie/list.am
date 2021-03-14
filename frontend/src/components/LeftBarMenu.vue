@@ -63,7 +63,7 @@
             Կատեգորիաներ<br>
             <a href="#" style="padding-left: 20px;">Մշակույթ և հոբբի</a><br>
             <div id="list">
-                <span style="font-weight: bold; color: #707073">Հնաոճ իրեր և արվեստ</span><br>
+                <span style="color: #5b5b5c">Հնաոճ իրեր և արվեստ</span><br>
                 <span style="padding-left: 20px; font-weight: bold">Հավաքածուներ</span><br>
                 <a href="#">Նկարչություն և նկարներ</a><br>
                 <a href="#">Արվեստի առարկաներ</a><br>

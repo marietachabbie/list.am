@@ -31,7 +31,7 @@ export default {
         grid-column-gap: 20px;
 
         width: 320px;
-        margin: 0px 0 0 70px;
+        margin: 0 0 0 70px;
     }
     #icons {
         background-color: transparent;
