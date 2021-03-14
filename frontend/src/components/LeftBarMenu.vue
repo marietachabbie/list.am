@@ -12,40 +12,59 @@
             <sui-dropdown-divider />
             <sui-segment vertical>
                 <input type="checkbox" id="photo" v-model="checked">
-                <label for="photo"> ԼուսանկարովԼուսանկարով</label>
+                <label for="photo"> Լուսանկարով</label>
             </sui-segment>
         </sui-segment>
 
-        <sui-segment id="locations" icon="right">
-            Տարածաշրջան{{'\xa0'}}{{'\xa0'}}{{'\xa0'}}
-            <sui-dropdown text="Ամբողջը">
-                <sui-dropdown-menu>
-                        <sui-dropdown-item>Երեւան</sui-dropdown-item>
-                        <sui-dropdown-item>Գեղարքունիք</sui-dropdown-item>
-                        <sui-dropdown-item>Լոռի</sui-dropdown-item>
-                        <sui-dropdown-item>Տավուշ</sui-dropdown-item>
-                        <sui-dropdown-item>Սյունիք</sui-dropdown-item>
-                        <sui-dropdown-item>Արարատ</sui-dropdown-item>
-                        <sui-dropdown-item>Արագածոտն</sui-dropdown-item>
-                        <sui-dropdown-item>Կոտայք</sui-dropdown-item>
-                        <sui-dropdown-item>Սյունիք</sui-dropdown-item>
-                        <sui-dropdown-item>Արմավիր</sui-dropdown-item>
-                </sui-dropdown-menu>
-            </sui-dropdown>
+        <sui-segment id="locations">
+            <div class="ui grid">
+                <div class="row">
+                    <div class="ten wide column">
+                        Տարածաշրջան
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <sui-dropdown text="Ամբողջը">
+                                <sui-dropdown-menu>
+                                        <sui-dropdown-item>Երեւան</sui-dropdown-item>
+                                        <sui-dropdown-item>Գեղարքունիք</sui-dropdown-item>
+                                        <sui-dropdown-item>Լոռի</sui-dropdown-item>
+                                        <sui-dropdown-item>Տավուշ</sui-dropdown-item>
+                                        <sui-dropdown-item>Սյունիք</sui-dropdown-item>
+                                        <sui-dropdown-item>Արարատ</sui-dropdown-item>
+                                        <sui-dropdown-item>Արագածոտն</sui-dropdown-item>
+                                        <sui-dropdown-item>Կոտայք</sui-dropdown-item>
+                                        <sui-dropdown-item>Սյունիք</sui-dropdown-item>
+                                        <sui-dropdown-item>Արմավիր</sui-dropdown-item>
+                                </sui-dropdown-menu>
+                            </sui-dropdown>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </sui-segment>
 
-        <sui-segment id="price">
-        Գին
-            <sui-input placeholder="Մին" transparent />
-            <sui-input placeholder="Մաքս" transparent />
+        <sui-segment>
+            <div class="ui grid">
+                <div class="eight wide column">
+                    Գին
+                </div>
+                <div class="three wide column">
+                    <sui-input placeholder="Մին" transparent />
+                </div>
+                <div class="three wide column">
+                    <sui-input placeholder="Մաքս" transparent />
+                </div>
+            </div>
         </sui-segment>
 
         <sui-segment id="categories">
             Կատեգորիաներ<br>
             <a href="#" style="padding-left: 20px;">Մշակույթ և հոբբի</a><br>
             <div id="list">
-                Հնաոճ իրեր և արվեստ<br>
-                Հավաքածուներ<br>
+                <p style="color: #5b5b5c">Հնաոճ իրեր և արվեստ</p>
+                <p style="padding-left: 20px; font-weight: bold">Հավաքածուներ</p>
                 <a href="#">Նկարչություն և նկարներ</a><br>
                 <a href="#">Արվեստի առարկաներ</a><br>
                 <a href="#">Արհեստ և ձեռագործություն</a><br>
@@ -70,8 +89,6 @@ export default {
 
 <style scoped>
     #menu {
-        display: grid;
-        grid-template-columns: auto;
         width: 280px;
     }
     #statuses {
@@ -83,8 +100,6 @@ export default {
         
     }
     #price {
-        display: grid;
-        grid-template-columns: auto auto auto;
     }
     #categories {
         border-bottom-left-radius: 10px;
