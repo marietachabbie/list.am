@@ -7,7 +7,7 @@
             <a href="#">Հնաոճ իրեր և արվեստ > </a>
             <a href="#">Հավաքածուներ</a>
         </div>
-        <LeftMenu />
+        <LeftBar />
         <h2>app</h2>
         <h2>app</h2>
         <h2>app</h2>
@@ -80,7 +80,7 @@
 
 <script>
 import Navbar from './components/Navbar';
-import LeftMenu from './components/LeftMenu';
+import LeftBar from './components/LeftBar';
 // import Antiquities from './components/Antiquities';
 
 export default {
@@ -88,7 +88,7 @@ export default {
     components: {
         // Antiquities,
         Navbar,
-        LeftMenu,
+        LeftBar,
     }
 }
 </script>

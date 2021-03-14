@@ -9,15 +9,18 @@
             <sui-button style="font-size: 10px; width: 24px; background-color: #5ADF29; color: white; padding-left: 6px;" icon="whatsapp" />
         </sui-segment>
 
-        <sui-segment id="left-menu">
-            
-        </sui-segment>
+        <LeftBarMenu />
     </div>
 </template>
 
 <script>
+import LeftBarMenu from './LeftBarMenu'
+
 export default {
     name: 'LeftMenu',
+    components: {
+        LeftBarMenu,
+    }
 }
 </script>
 
@@ -27,7 +30,7 @@ export default {
         grid-template-columns: auto auto;
         grid-column-gap: 20px;
 
-        width: 100px;
+        width: 320px;
         margin: 0px 0 0 70px;
     }
     #icons {
@@ -36,9 +39,6 @@ export default {
         display: grid;
         grid-row-gap: 5px;
         padding-top: 40px;
-    }
-    #left-menu {
-        border-radius: 10px;
-        background-color: white;
+        height: 260px;
     }
 </style>>
