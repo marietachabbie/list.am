@@ -7,7 +7,6 @@
                 :price="price"
                 :status="status">
                 <a href="#">
-                    
                     <img :src="post.photoLink || 'https://i.ibb.co/6PhhQgS/10546i3dac5a5993c8bc8c-4.jpg'" />
                     <br>
                     <p style="font-weight: bold;">{{ post.price || post.status }}</p>
@@ -53,6 +52,7 @@ export default {
     }
     img {
         width: 264px;
+        height: 232px;
         border-radius: 10px;
     }
     a {
