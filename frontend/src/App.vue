@@ -2,24 +2,21 @@
     <div id="app">
         <Navbar />
         <SmallNavbar />
-        <LeftBar />
-        <Antiquities />  
+        <MainPage />  
     </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar';
-import LeftBar from './components/LeftBar';
-import Antiquities from './components/Antiquities';
 import SmallNavbar from './components/SmallNavbar';
+import MainPage from "./components/MainPage";
 
 export default {
     name: 'App',
     components: {
         Navbar,
         SmallNavbar,
-        LeftBar,
-        Antiquities,
+        MainPage,
     }
 }
 </script>
@@ -29,7 +26,6 @@ export default {
         font-family: Avenir, Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        color: #2c3e50;
         background-color: #f1f1f1;
     }
 </style>

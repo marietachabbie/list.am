@@ -10,16 +10,19 @@
         </sui-segment>
 
         <LeftBarMenu />
+        <Announcements />
     </div>
 </template>
 
 <script>
+import Announcements from './Announcements'
 import LeftBarMenu from './LeftBarMenu'
 
 export default {
     name: 'LeftMenu',
     components: {
         LeftBarMenu,
+        Announcements,
     }
 }
 </script>
@@ -27,11 +30,9 @@ export default {
 <style scoped>
     #container {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
         grid-column-gap: 20px;
-
-        width: 320px;
-        margin: 0 0 0 70px;
+        margin: 0 120px 0 70px;
     }
     #icons {
         background-color: transparent;
