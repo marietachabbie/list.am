@@ -32,17 +32,21 @@
             <h5>Նմանատիպ հայտարարություններ</h5>
             <sui-segment vertical>
                 <a
-                id="similar-item"
                 href="#"
                 v-for="product in products" 
                 :key="product.header">
-                    <img
-                    id="similar-photo"
-                    :src="product.photoLink  || 'https://i.ibb.co/6PhhQgS/10546i3dac5a5993c8bc8c-4.jpg'">
-                    <span>
-                        <p>{{ product.header }}</p>
-                        <p id="price">{{ product.price || product.status }}</p>
-                    </span>
+                    <router-link
+                    :to="product._id"
+                    id="similar-item">
+                        <img
+                        id="similar-photo"
+                        :src="product.photoLink  || 'https://i.ibb.co/6PhhQgS/10546i3dac5a5993c8bc8c-4.jpg'">
+                        
+                        <span>
+                            <p>{{ product.header }}</p>
+                            <p id="price">{{ product.price || product.status }}</p>
+                        </span>
+                    </router-link>
                 </a>
             </sui-segment>
         </sui-segment>
@@ -114,9 +118,9 @@ export default {
         border-bottom-right-radius: 10px;
     }
     #similar-item {
-        color: black;
         display: grid;
         grid-template-columns: auto auto;
+        color: black;
         padding-right: 50%;
     }
     #similar-photo {
