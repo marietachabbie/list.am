@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import Navbar from './components/Navbar';
-import SmallNavbar from './components/SmallNavbar';
-import MainPage from "./components/MainPage";
+import Navbar from './components/topnavbar/navbar/Navbar';
+import SmallNavbar from './components/topnavbar/smallnavbar/SmallNavbar';
+import MainPage from "./components/mainpage/MainPage";
 
 export default {
     name: 'App',

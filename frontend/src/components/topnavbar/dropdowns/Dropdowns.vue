@@ -49,7 +49,7 @@
 </template>
 
 <script>
-import dropdowns from '../../data/dropdowns.json';
+import dropdowns from '../../../../data/dropdowns.json';
 
 export default {
     name: 'Dropdowns',

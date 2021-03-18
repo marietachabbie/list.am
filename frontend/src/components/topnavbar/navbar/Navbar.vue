@@ -56,7 +56,7 @@
 </template>
 
 <script>
-import Dropdowns from './Dropdowns';
+import Dropdowns from '../dropdowns/Dropdowns';
 
 export default {
     name: 'Navbar',
