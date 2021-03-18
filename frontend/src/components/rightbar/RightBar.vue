@@ -29,16 +29,48 @@
         </sui-segment>
 
         <sui-segment id="similar-items">
+            <h5>Նմանատիպ հայտարարություններ</h5>
+            <sui-segment vertical>
+                <a
+                id="similar-item"
+                href="#"
+                v-for="product in products" 
+                :key="product.header">
+                    <img
+                    id="similar-photo"
+                    :src="product.photoLink  || 'https://i.ibb.co/6PhhQgS/10546i3dac5a5993c8bc8c-4.jpg'">
+                    <span>
+                        <p>{{ product.header }}</p>
+                        <p id="price">{{ product.price || product.status }}</p>
+                    </span>
+                </a>
+            </sui-segment>
         </sui-segment>
     </div>
 </template>
 
 <script>
+import PostService from '../../PostService';
+
 export default {
     name: 'RightBar',
     props: {
         post: {},
-    }
+    },
+    data() {
+        return {
+            products: [],
+            error: '',
+        }
+    },
+    async created() {
+        try {
+            const posts = await PostService.getPosts();
+            this.products = posts.filter(product => product.category == this.post.category);
+        } catch(err) {
+            this.error = err.message;
+        }
+    },
 }
 </script>
 
@@ -80,5 +112,20 @@ export default {
     #similar-items {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+    }
+    #similar-item {
+        color: black;
+        display: grid;
+        grid-template-columns: auto auto;
+        padding-right: 50%;
+    }
+    #similar-photo {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 16px;
+        margin-right: 12px;
+    }
+    #price {
+        font-weight: bold;
     }
 </style>
