@@ -1,4 +1,5 @@
-const MongoClient = require('mongodb').MongoClient;
+const mongodb = require('mongodb')
+const MongoClient = mongodb.MongoClient;
 
 module.exports = {
     currentNumberOfAnnouncements: 15737110,
@@ -20,5 +21,19 @@ module.exports = {
         const collection = db.collection('announcements');
         const cursor = collection.find();
         return cursor.toArray();
+    },
+    loadSingleAnnouncement: async (id) => {
+        const client = await MongoClient.connect(
+            process.env.DB_CONNECTION,
+            {
+                useUnifiedTopology: true,
+                useUnifiedTopology: true,
+            }
+        );
+        const objectID = new mongodb.ObjectID(id);
+        const db = client.db('ListamDB');
+        const collection = db.collection('announcements');
+        const cursor = collection.findOne({'_id': objectID});
+        return cursor;
     }
 }
