@@ -23,6 +23,6 @@ export default {
         display: grid;
         grid-template-columns: auto auto;
         grid-column-gap: 20px;
-        margin: 0 120px 0 70px;
+        margin: 0 120px 0 50px;
     }
 </style>>

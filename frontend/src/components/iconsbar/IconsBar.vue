@@ -21,7 +21,8 @@
         border-style: none;
         display: grid;
         grid-row-gap: 5px;
-        padding-top: 40px;
-        height: 260px;
+        padding: 40px 0 0 80px;
+        width: 30px;
+        height: 250px;
     }
 </style>

@@ -1,18 +1,42 @@
 <template>
-    <sui-segment id="container">
-        <h3>vacharvum e</h3>
-        <p>{{ post }}</p>
-    </sui-segment>
+    <div class="ui grid" id="container">
+        <sui-segment class="ten wide column" id="annoucement">
+            <img
+            id="product-image"
+            :src="post.photoLink || 'https://i.ibb.co/6PhhQgS/10546i3dac5a5993c8bc8c-4.jpg'"
+            />
+            <br>
+            <p id="header">{{ post.header }}</p>
+            <p id="price-and-location">
+                <span id="price">
+                    {{ post.price || post.status }}
+                </span>
+                <sui-icon name="map marker alternate"></sui-icon>
+                {{ post.location }} > Մալաթիա Սեբաստիա
+            </p>
+
+            <p id="description">{{ post.description }}</p>
+            <br>
+            <pre id="product-footer">Հայտարարության համարը: {{ post.postNumber }}    Ամսաթիվ: {{ post.publicationDate }}    Թարմացվել է: {{ post.lastUpdated }}</pre>
+
+        </sui-segment>
+
+        <Seller />
+    </div>
 </template>
 
 <script>
 import PostService from '../../PostService';
+import Seller from '../seller/Seller';
 
 export default {
     name: 'SingleAnnouncement',
+    components: {
+        Seller,
+    },
     data() {
         return {
-            post: [],
+            post: {},
             error: '',
             id: this.$route.params.id,
         }
@@ -29,7 +53,32 @@ export default {
 
 <style scoped>
     #container {
-        display: grid;
-        grid-template-columns: auto, auto;
+        margin: 10px 120px 0 50px;
+    }
+    #annoucement {
+        border-radius: 10px;
+        padding: 20px;
+        margin-right: 20px;
+    }
+    #product-image {
+        width: 700px;
+        margin-bottom: 20px;
+    }
+    #header {
+        font-size: 22px;
+    }
+    #price-and-location {
+        font-size: 16px;
+    }
+    #price {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    #description {
+        font-size: 16px;
+    }
+    #product-footer {
+        font-size: 12px;
+        color: #707073;
     }
 </style>

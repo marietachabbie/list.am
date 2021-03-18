@@ -2,8 +2,11 @@
     <div id="app">
         <NavBar />
         <SmallNavbar />
-        <IconsBar />
-        <router-view />
+
+        <div id="main">
+            <IconsBar />
+            <router-view />
+        </div>
     </div>
 </template>
 
@@ -28,5 +31,10 @@ export default {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         background-color: #f1f1f1;
+    }
+
+    #main {
+        display: grid;
+        grid-template-columns: auto auto;
     }
 </style>
