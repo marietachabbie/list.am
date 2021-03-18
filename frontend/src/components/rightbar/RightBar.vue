@@ -14,6 +14,18 @@
         </sui-segment>
 
         <sui-segment id="navigation">
+            <a href="#">
+                <sui-icon name="angle double up"></sui-icon>
+                <p>Տոպ</p>
+            </a>
+            <a href="#">
+                <sui-icon name="home"></sui-icon>
+                <p>Գլխավոր էջ</p>
+            </a>
+            <a href="#">
+                <sui-icon name="clock outline"></sui-icon>
+                <p>Շտապ</p>       
+            </a>
         </sui-segment>
 
         <sui-segment id="similar-items">
@@ -32,8 +44,7 @@ export default {
 
 <style scoped>
     #right-bar {
-        margin: 0px 20px;
-        width: 400px;
+        width: 440px;
     }
     #seller {
         border-top-left-radius: 10px;
@@ -61,6 +72,10 @@ export default {
         border-radius: 20px;
     }
     #navigation {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        text-align: center;
+        font-size: 18px;
     }
     #similar-items {
         border-bottom-left-radius: 10px;
