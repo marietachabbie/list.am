@@ -21,18 +21,18 @@
 
         </sui-segment>
 
-        <Seller />
+        <RightBar />
     </div>
 </template>
 
 <script>
 import PostService from '../../PostService';
-import Seller from '../seller/Seller';
+import RightBar from '../rightbar/RightBar';
 
 export default {
     name: 'SingleAnnouncement',
     components: {
-        Seller,
+        RightBar,
     },
     data() {
         return {
@@ -58,7 +58,6 @@ export default {
     #annoucement {
         border-radius: 10px;
         padding: 20px;
-        margin-right: 20px;
     }
     #product-image {
         width: 700px;
