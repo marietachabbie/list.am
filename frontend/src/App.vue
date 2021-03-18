@@ -2,21 +2,21 @@
     <div id="app">
         <Navbar />
         <SmallNavbar />
-        <MainPage />  
+        <router-view />
     </div>
 </template>
 
 <script>
 import Navbar from './components/topnavbar/navbar/Navbar';
 import SmallNavbar from './components/topnavbar/smallnavbar/SmallNavbar';
-import MainPage from "./components/mainpage/MainPage";
+// import MainPage from "./components/mainpage/MainPage";
 
 export default {
     name: 'App',
     components: {
         Navbar,
         SmallNavbar,
-        MainPage,
+        // MainPage,
     }
 }
 </script>

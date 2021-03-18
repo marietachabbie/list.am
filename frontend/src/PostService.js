@@ -12,7 +12,20 @@ const getAnnouncements = async () => {
                         })))
 
     } catch (error) {
-        console.log('You error is ' + error);
+        Promise.reject(error);
+    }
+}
+
+const getSingleAnnouncement = async (id) => {
+    const url = `http://localhost:3000/antiquities/${id}`;
+
+    try {
+        const res = await axios.get(url);
+        const data = res.data;
+        
+        return Promise.resolve(data)
+
+    } catch (error) {
         Promise.reject(error);
     }
 }
@@ -20,6 +33,10 @@ const getAnnouncements = async () => {
 class PostService {
     static getPosts() {
         return getAnnouncements();
+    }
+
+    static getSinglePost(id) {
+        return getSingleAnnouncement(id);
     }
 }
 

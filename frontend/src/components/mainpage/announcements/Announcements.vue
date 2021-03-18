@@ -4,14 +4,17 @@
             <div class="five wide column"
             v-for="post in posts"
                 :key="post.header"
+                :_id="_id"
                 :price="price"
                 :status="status">
-                <a href="#">
-                    <img :src="post.photoLink || 'https://i.ibb.co/6PhhQgS/10546i3dac5a5993c8bc8c-4.jpg'" />
-                    <br>
-                    <p style="font-weight: bold;">{{ post.price || post.status }}</p>
-                    {{ post.header }}
-                </a>
+                <router-link :to="post._id">
+                    <a href="#">
+                        <img :src="post.photoLink || 'https://i.ibb.co/6PhhQgS/10546i3dac5a5993c8bc8c-4.jpg'" />
+                        <br>
+                        <p style="font-weight: bold;">{{ post.price || post.status }}</p>
+                        {{ post.header }}
+                    </a>
+                </router-link>
             </div>
         </sui-segment>
     </div>
