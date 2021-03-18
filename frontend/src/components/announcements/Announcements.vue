@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import PostService from '../../../PostService';
+import PostService from '../../PostService';
 
 export default {
     name: 'Announcements',

@@ -1,5 +1,5 @@
 <template>
-    <sui-segment>
+    <sui-segment id="container">
         <h3>vacharvum e</h3>
         <p>{{ post }}</p>
     </sui-segment>
@@ -26,3 +26,10 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+    #container {
+        display: grid;
+        grid-template-columns: auto, auto;
+    }
+</style>

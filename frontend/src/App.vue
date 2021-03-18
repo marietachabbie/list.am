@@ -1,22 +1,23 @@
 <template>
     <div id="app">
-        <Navbar />
+        <NavBar />
         <SmallNavbar />
+        <IconsBar />
         <router-view />
     </div>
 </template>
 
 <script>
-import Navbar from './components/topnavbar/navbar/Navbar';
+import NavBar from './components/topnavbar/firstrow/NavBar';
 import SmallNavbar from './components/topnavbar/smallnavbar/SmallNavbar';
-// import MainPage from "./components/mainpage/MainPage";
+import IconsBar from './components/iconsbar/IconsBar';
 
 export default {
     name: 'App',
     components: {
-        Navbar,
+        NavBar,
         SmallNavbar,
-        // MainPage,
+        IconsBar,
     }
 }
 </script>
