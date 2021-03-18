@@ -7,6 +7,8 @@
             <IconsBar />
             <router-view />
         </div>
+
+        <Footer />
     </div>
 </template>
 
@@ -14,6 +16,7 @@
 import NavBar from './components/topnavbar/firstrow/NavBar';
 import SmallNavbar from './components/topnavbar/smallnavbar/SmallNavbar';
 import IconsBar from './components/iconsbar/IconsBar';
+import Footer from './components/footer/Footer'
 
 export default {
     name: 'App',
@@ -21,6 +24,7 @@ export default {
         NavBar,
         SmallNavbar,
         IconsBar,
+        Footer,
     }
 }
 </script>
