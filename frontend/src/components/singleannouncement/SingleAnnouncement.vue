@@ -21,7 +21,7 @@
 
         </sui-segment>
 
-        <RightBar />
+        <RightBar :post="post" />
     </div>
 </template>
 
