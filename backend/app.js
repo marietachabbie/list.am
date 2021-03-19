@@ -11,5 +11,5 @@ app.use(express.json());
 const posts = require('./routes/antiquities');
 app.use('/antiquities', posts);
 
-// createAndInsertAnnouncements();
+createAndInsertAnnouncements();
 app.listen(3000);
