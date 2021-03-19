@@ -20,7 +20,3 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
-
-package.json
-package-lock.json
-babel.config.js
