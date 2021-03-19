@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const createAndInsertAnnouncements = require('./models/Announcements');
+const createAndInsertAnnouncements = require('./models/Announcements').createAndInsertAnnouncements;
 const cors = require('cors');
 
 require('dotenv/config');
@@ -10,6 +10,7 @@ app.use(express.json());
 
 const posts = require('./routes/antiquities');
 app.use('/antiquities', posts);
+
 
 createAndInsertAnnouncements();
 app.listen(3000);

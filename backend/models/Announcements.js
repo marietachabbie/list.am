@@ -4,6 +4,7 @@ const assignAnnouncementNumber = util.assignAnnouncementNumber;
 let currentNumberOfAnnouncements = util.currentNumberOfAnnouncements;
 let existedAnnouncements = require('../data/announcements');
 
+
 assignAnnouncementNumber(existedAnnouncements, currentNumberOfAnnouncements);
 
 const Schema = mongoose.Schema;
@@ -26,7 +27,16 @@ let Announcements = mongoose.model('Announcements', AnnouncementSchema);
 
 module.exports = {
     Announcements: Announcements,
-    createAndInsert: () => {
+    createAndInsertAnnouncements: () => {
+        mongoose.connect(
+            process.env.DB_CONNECTION,
+            {
+                useUnifiedTopology: true,
+                useNewUrlParser: true
+            }
+        );
+        console.log('successfuly connected to db!');
+
         Announcements.create(existedAnnouncements, function (err) {
             if (err) console.log(err);
             console.log('Announcements collection is created!');

@@ -13,7 +13,7 @@ module.exports = {
             process.env.DB_CONNECTION,
             {
                 useUnifiedTopology: true,
-                useUnifiedTopology: true,
+                useNewUrlParser: true
             }
         );
         console.log('successfuly connected to db!');
@@ -27,7 +27,7 @@ module.exports = {
             process.env.DB_CONNECTION,
             {
                 useUnifiedTopology: true,
-                useUnifiedTopology: true,
+                useNewUrlParser: true
             }
         );
         const objectID = new mongodb.ObjectID(id);
