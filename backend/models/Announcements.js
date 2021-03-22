@@ -23,10 +23,7 @@ const AnnouncementSchema = new Schema({
     postNumber: Number,
 });
 
-let Announcements = mongoose.model('Announcements', AnnouncementSchema);
-
 module.exports = {
-    Announcements: Announcements,
     createAndInsertAnnouncements: () => {
         mongoose.connect(
             process.env.DB_CONNECTION,
@@ -35,11 +32,13 @@ module.exports = {
                 useNewUrlParser: true
             }
         );
-        console.log('successfuly connected to db!');
-
-        Announcements.create(existedAnnouncements, function (err) {
-            if (err) console.log(err);
-            console.log('Announcements collection is created!');
-        })
+        console.log('Successfuly connected to db!');
+        
+        return mongoose.model('Announcements', AnnouncementSchema);
+        
+        // Announcements.create(existedAnnouncements, function (err) {
+        //     if (err) console.log(err);
+        //     console.log('Announcements collection is created!');
+        // })
     }
 }

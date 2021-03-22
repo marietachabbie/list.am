@@ -14,7 +14,7 @@ module.exports = {
                 useNewUrlParser: true
             }
         );
-        console.log('successfuly connected to db!');
+        console.log('Successfuly connected to db!');
         const db = client.db('ListamDB');
         const collection = db.collection('announcements');
         const cursor = collection.find();
