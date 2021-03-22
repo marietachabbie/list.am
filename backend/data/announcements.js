@@ -9,7 +9,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Տան պարագաներ',
         },
         {
@@ -22,7 +22,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Տեխնիկա/ եր. գործիքներ',
         },
         {
@@ -35,7 +35,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Տան պարագաներ',
         },
         {
@@ -48,7 +48,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Տան պարագաներ',
         },
         {
@@ -61,7 +61,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Տեխնիկա/ եր. գործիքներ',
         },
         {
@@ -73,7 +73,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Տան պարագաներ',
         },
         {
@@ -85,7 +85,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Տան պարագաներ',
         },
         {
@@ -97,7 +97,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Տան պարագաներ',
         },
         {
@@ -109,7 +109,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Արձանիկներ',
         },
         {
@@ -121,7 +121,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Տան պարագաներ',
         },
         {
@@ -133,7 +133,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Արձանիկներ',
         },
         {
@@ -145,7 +145,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Տեխնիկա/ եր. գործիքներ',
         },
         {
@@ -157,7 +157,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Բացիկներ, նամականիշեր',
         },
         {
@@ -169,7 +169,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Տան պարագաներ',
         },
         {
@@ -181,7 +181,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Տան պարագաներ',
         },
         {
@@ -194,7 +194,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Արձանիկներ',
         },
         {
@@ -207,7 +207,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Բացիկներ, նամականիշեր',
         },
         {
@@ -220,7 +220,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Բացիկներ, նամականիշեր',
         },
         {
@@ -233,7 +233,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Բացիկներ, նամականիշեր',
         },
         {
@@ -246,7 +246,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Շքանշաններ',
         },
         {
@@ -259,7 +259,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Շքանշաններ',
         },
         {
@@ -271,7 +271,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Շքանշաններ',
         },
         {
@@ -283,7 +283,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Շքանշաններ',
         },
         {
@@ -295,7 +295,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Շքանշաններ',
         },
         {
@@ -308,7 +308,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Շքանշաններ',
         },
         {
@@ -321,7 +321,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Շքանշաններ',
         },
         {
@@ -334,7 +334,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Տեխնիկա/ եր. գործիքներ',
         },
         {
@@ -347,7 +347,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Տեխնիկա/ եր. գործիքներ',
         },
         {
@@ -360,7 +360,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Շքանշաններ',
         },
         {
@@ -372,7 +372,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Տան պարագաներ',
         },
         {
@@ -383,7 +383,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Տան պարագաներ',
         },
         {
@@ -396,7 +396,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Տան պարագաներ',
         },
         {
@@ -408,7 +408,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Բացիկներ, նամականիշեր',
         },
         {
@@ -420,7 +420,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Տան պարագաներ',
         },
         {
@@ -431,7 +431,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Բացիկներ, նամականիշեր',
         },
         {
@@ -442,7 +442,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Բացիկներ, նամականիշեր',
         },
         {
@@ -454,7 +454,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Արձանիկներ',
         },
         {
@@ -466,7 +466,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Արձանիկներ',
         },
         {
@@ -478,7 +478,7 @@ module.exports = [
             'publicationDate':'12.09.2019',
             'lastUpdated':'Մարտ 05, 2021 17:34',
             'sellerName':'Աշոտ Միքայելյան',
-            'sellerPhotoLink': 'https://bit.ly/3eryxp1',
+            'sellerPhotoLink': 'https://bit.ly/3lFanJ5',
             'category':'Տան պարագաներ',
         }
     ]

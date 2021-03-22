@@ -15,6 +15,5 @@ try {
     createAndInsertAnnouncements();
     app.listen(3000);
 } catch (error) {
-    console.log(error.name);
-    console.log(error.message);
+    outputError();
 }

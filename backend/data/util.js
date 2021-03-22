@@ -16,6 +16,10 @@ const collect = async () => {
 
 module.exports = {
     currentNumberOfAnnouncements: 15737110,
+    outputError: () => {
+        console.log(error.name);
+        console.log(error.message);
+    },
     assignAnnouncementNumber: (annList, startNumber) => {
         annList.forEach(obj => obj['postNumber'] = startNumber++);
     },
@@ -24,8 +28,7 @@ module.exports = {
             const collection = await collect();
             return collection.find().toArray();
         } catch (error) {
-            console.log(error.name);
-            console.log(error.message);
+            outputError();
         }
     },
     loadSingleAnnouncement: async (id) => {
@@ -34,8 +37,7 @@ module.exports = {
             const collection = await collect();
             return collection.findOne({'_id': objectID});
         } catch (error) {
-            console.log(error.name);
-            console.log(error.message);
+            outputError();
         }
-    }
+    },
 }

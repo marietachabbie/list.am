@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
 const util = require('../data/util');
 const assignAnnouncementNumber = util.assignAnnouncementNumber;
-let currentNumberOfAnnouncements = util.currentNumberOfAnnouncements;
-let existedAnnouncements = require('../data/announcements');
+const currentNumberOfAnnouncements = util.currentNumberOfAnnouncements;
+const existedAnnouncements = require('../data/announcements');
+const outputError = util.outputError;
 
 
 assignAnnouncementNumber(existedAnnouncements, currentNumberOfAnnouncements);
@@ -23,9 +24,9 @@ const AnnouncementSchema = new Schema({
     postNumber: Number,
 });
 
-module.exports = () => {
+module.exports = async () => {
         try {
-            mongoose.connect(
+            await mongoose.connect(
                 process.env.DB_CONNECTION,
                 {
                     useUnifiedTopology: true,
@@ -33,9 +34,15 @@ module.exports = () => {
                 }
             );
             console.log('Successfuly connected to db!');
-            return mongoose.model('Announcements', AnnouncementSchema);
+            const announcementsModel = mongoose.model('Announcements', AnnouncementSchema);
+            
+            try {
+                announcementsModel.create(existedAnnouncements);
+                console.log('Announcements collection is created!');
+            } catch (error) {
+                outputError();
+            }
         } catch (error) {
-            console.log(error.name);
-            console.log(error.message);
+            outputError();
         }
     }
