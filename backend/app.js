@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const createAndInsertAnnouncements = require('./models/Announcements').createAndInsertAnnouncements;
+const createAndInsertAnnouncements = require('./models/Announcements');
 const cors = require('cors');
 
 require('dotenv/config');

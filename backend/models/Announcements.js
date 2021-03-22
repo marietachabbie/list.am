@@ -23,8 +23,7 @@ const AnnouncementSchema = new Schema({
     postNumber: Number,
 });
 
-module.exports = {
-    createAndInsertAnnouncements: () => {
+module.exports = () => {
         try {
             mongoose.connect(
                 process.env.DB_CONNECTION,
@@ -40,4 +39,3 @@ module.exports = {
             console.log(error.message);
         }
     }
-}
