@@ -1,37 +1,41 @@
 const mongodb = require('mongodb')
 const MongoClient = mongodb.MongoClient;
 
+const collect = async () => {
+    const client = await MongoClient.connect(
+        process.env.DB_CONNECTION,
+        {
+            useUnifiedTopology: true,
+            useNewUrlParser: true
+        }
+    );
+    console.log('Successfuly connected to db!');
+    const db = client.db('ListamDB');
+    return db.collection('announcements');
+}
+
 module.exports = {
     currentNumberOfAnnouncements: 15737110,
     assignAnnouncementNumber: (annList, startNumber) => {
         annList.forEach(obj => obj['postNumber'] = startNumber++);
     },
     loadAnnouncements: async () => {
-        const client = await MongoClient.connect(
-            process.env.DB_CONNECTION,
-            {
-                useUnifiedTopology: true,
-                useNewUrlParser: true
-            }
-        );
-        console.log('Successfuly connected to db!');
-        const db = client.db('ListamDB');
-        const collection = db.collection('announcements');
-        const cursor = collection.find();
-        return cursor.toArray();
+        try {
+            const collection = await collect();
+            return collection.find().toArray();
+        } catch (error) {
+            console.log(error.name);
+            console.log(error.message);
+        }
     },
     loadSingleAnnouncement: async (id) => {
-        const client = await MongoClient.connect(
-            process.env.DB_CONNECTION,
-            {
-                useUnifiedTopology: true,
-                useNewUrlParser: true
-            }
-        );
-        const objectID = new mongodb.ObjectID(id);
-        const db = client.db('ListamDB');
-        const collection = db.collection('announcements');
-        const cursor = collection.findOne({'_id': objectID});
-        return cursor;
+        try {
+            const objectID = new mongodb.ObjectID(id);
+            const collection = await collect();
+            return collection.findOne({'_id': objectID});
+        } catch (error) {
+            console.log(error.name);
+            console.log(error.message);
+        }
     }
 }
