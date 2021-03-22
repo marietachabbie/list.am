@@ -25,20 +25,19 @@ const AnnouncementSchema = new Schema({
 
 module.exports = {
     createAndInsertAnnouncements: () => {
-        mongoose.connect(
-            process.env.DB_CONNECTION,
-            {
-                useUnifiedTopology: true,
-                useNewUrlParser: true
-            }
-        );
-        console.log('Successfuly connected to db!');
-        
-        return mongoose.model('Announcements', AnnouncementSchema);
-        
-        // Announcements.create(existedAnnouncements, function (err) {
-        //     if (err) console.log(err);
-        //     console.log('Announcements collection is created!');
-        // })
+        try {
+            mongoose.connect(
+                process.env.DB_CONNECTION,
+                {
+                    useUnifiedTopology: true,
+                    useNewUrlParser: true
+                }
+            );
+            console.log('Successfuly connected to db!');
+            return mongoose.model('Announcements', AnnouncementSchema);
+        } catch (error) {
+            console.log(error.name);
+            console.log(error.message);
+        }
     }
 }
