@@ -4,9 +4,7 @@ const MongoClient = mongodb.MongoClient;
 module.exports = {
     currentNumberOfAnnouncements: 15737110,
     assignAnnouncementNumber: (annList, startNumber) => {
-        for(let i = 0; i < annList.length; i++){
-            annList[i]['postNumber'] = startNumber + i;
-        }
+        annList.forEach(obj => obj['postNumber'] = startNumber++);
     },
     loadAnnouncements: async () => {
         const client = await MongoClient.connect(
