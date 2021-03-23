@@ -2,7 +2,7 @@
     <div class="column" id="right-bar">
         <sui-segment id="seller">
             <img :src="post.sellerPhotoLink" id="seller-photo">
-            <p id="seller-name">{{ post.sellerName }} Միքայելյան</p>
+            <p id="seller-name">{{ post.sellerName }}</p>
             <p id="registered">List.am-ում է` 12.05.2015</p>
             <button class="ui primary button custom-button">
                 Գրել
