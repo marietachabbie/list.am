@@ -8,6 +8,8 @@ assignAnnouncementNumber(existedAnnouncements, currentNumberOfAnnouncements);
 module.exports = async (client) => {
     try {
         const announcements = client.db("ListamDB").collection("announcements");
+        await announcements.drop();
+
         const options = { ordered: true };
         const result = await announcements.insertMany(existedAnnouncements, options);
 
