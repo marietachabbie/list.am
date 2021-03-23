@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const loadAnnouncements = require('../data/util').loadAnnouncements;
-const loadSingleAnnouncement = require('../data/util').loadSingleAnnouncement;
+const util = require('../data/util');
+const loadAnnouncements = util.loadAnnouncements;
+const loadSingleAnnouncement = util.loadSingleAnnouncement;
 
 router.get('/', async (req, res) => {
     const announcements = await loadAnnouncements();
