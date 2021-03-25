@@ -26,7 +26,6 @@ const main = async() => {
         app.get('/', function (req,res) {
             res.sendFile(path + "index.html");
         });
-
         const client = require('./data/client');
         await client.connect();
         createAndInsertAnnouncements(client);
@@ -37,3 +36,8 @@ const main = async() => {
 };
 
 main();
+
+// 404
+app.use((req, res) => {
+    res.send("Page you requested doesn't exist :(");
+})
