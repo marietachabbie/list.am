@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import PostService from '../../PostService';
+import PostService from '../../services/PostService';
 import RightBar from '../rightbar/RightBar';
 
 export default {
