@@ -1,26 +1,22 @@
 const mongodb = require('mongodb');
 const MongoClient = mongodb.MongoClient;
 
-const collection = async () => {
-    const client = await MongoClient.connect(
-        process.env.URI,
-        {
-            useUnifiedTopology: true,
-            useNewUrlParser: true
-        }
-    );
-    console.log('Successfuly connected to db!');
-    const db = client.db('ListamDB');
-    return db.collection('announcements');
-};
+const currentNumberOfAnnouncements = 15737110;
 
 const output = (error) => {
     console.log(error.name);
     console.log(error.message);
 };
 
+const collection = async () => {
+    const client = require('./client');
+    await client.connect();
+    return client.db("ListamDB").collection("announcements");
+}
+
 module.exports = {
-    currentNumberOfAnnouncements: 15737110,
+    currentNumberOfAnnouncements,
+    output,
     assignAnnouncementNumber: (annList, startNumber) => {
         annList.forEach(obj => obj['postNumber'] = startNumber++);
     },

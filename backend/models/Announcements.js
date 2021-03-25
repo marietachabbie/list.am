@@ -9,12 +9,13 @@ module.exports = async (client) => {
     try {
         const announcements = client.db("ListamDB").collection("announcements");
         await announcements.drop();
+        console.log('Announcement table dropped succesfully!')
 
         const options = { ordered: true };
         const result = await announcements.insertMany(existedAnnouncements, options);
 
-        console.log(`${result.insertedCount} documents were succesfully inserted!`);
+        console.log(`${result.insertedCount} documents inserted!`);
     } finally {
-        client.close();
+        // client.close();
     }
 }
