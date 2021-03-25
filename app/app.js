@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser')
+const morgan = require('morgan');
 require('dotenv').config();
 const createAndInsertAnnouncements = require('./models/Announcements');
 const util = require('./data/util');
@@ -20,6 +21,7 @@ app.use(cors(corsOptions));
 
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(morgan('dev'));
 
 const main = async() => {
     try {
