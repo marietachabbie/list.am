@@ -1,20 +1,32 @@
 const express = require('express');
-const app = express();
+const cors = require('cors');
+const bodyParser = require('body-parser')
+require('dotenv').config();
 const createAndInsertAnnouncements = require('./models/Announcements');
 const util = require('./data/util');
-const cors = require('cors');
 const output = util.output;
 
-require('dotenv').config();
-
-app.use(cors());
-app.use(express.json());
+const app = express();
 
 const postRouts = require('./routes/antiquities');
 app.use('/antiquities', postRouts);
 
+const path = __dirname + '/views/';
+app.use(express.static(path));
+var corsOptions = {
+    origin: "http://localhost:8081"
+};
+app.use(cors(corsOptions));
+
+app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 const main = async() => {
     try {
+        app.get('/', function (req,res) {
+            res.sendFile(path + "index.html");
+        });
+
         const client = require('./data/client');
         await client.connect();
         createAndInsertAnnouncements(client);
