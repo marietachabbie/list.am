@@ -19,7 +19,14 @@ module.exports = {
     output,
     assignAnnouncementNumber: (annList, startNumber) => {
         annList.forEach(obj => obj['postNumber'] = startNumber++);
-    },
+    }, // generator is a better solution for the future (on creating an announcement)
+    // function* idMaker() {
+    //     var index = 0;
+    //     while (true)
+    //       yield index++;
+    //   }
+      
+    //   var gen = idMaker();
     loadAnnouncements: async () => {
         try {
             const announcements = await collection();

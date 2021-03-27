@@ -23,19 +23,16 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan('dev'));
 
-const main = async() => {
-    try {
-        app.get('/', function (req,res) {
-            res.sendFile(path + "index.html");
-        });
-        const client = require('./data/client');
-        await client.connect();
-        createAndInsertAnnouncements(client);
-        app.listen(3000);
-    } catch (error) {
-        output(error);
-    }
-};
+const main = () => {
+    app.get('/', function (req, res) {
+        res.sendFile(path + "index.html");
+    });
+    const client = require('./data/client');
+    client.connect()
+    .then(() => createAndInsertAnnouncements(client))
+    .catch (error => output(error))
+    .finally(() => app.listen(3000));
+}
 
 main();
 
