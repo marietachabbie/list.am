@@ -1,10 +1,6 @@
-const express = require('express');
-const app = express();
 const router = express.Router();
-const util = require('../data/util');
-const announcements = app.locals.announcements;
-const loadAnnouncements = util.loadAnnouncements;
-const loadSingleAnnouncement = util.loadSingleAnnouncement;
+const getAnnouncements = require('../models/class-methods/getAnnouncements');
+const getSingleAnnouncement = require('../models/class-methods/getSingleAnnouncement');
 
 router.get('/', (req, res, next) => {
     return announcements

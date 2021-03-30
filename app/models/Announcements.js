@@ -1,9 +1,7 @@
-const express = require('express');
-const app = express();
 const util = require('../data/util');
-const output = util.output;
 const currentNumberOfAnnouncements = util.currentNumberOfAnnouncements;
 const existedAnnouncements = require('../data/existedAnnouncements');
+const output = util.output;
 const assignAnnouncementNumber = util.assignAnnouncementNumber;
 
 assignAnnouncementNumber(existedAnnouncements, currentNumberOfAnnouncements);
@@ -13,15 +11,6 @@ const createCollection = (client) => {
     announcements.drop()
     .then(console.log('Announcement table dropped succesfully! '))
     .catch(error => output(error));
-
-    // db.listCollections({name: 'announcements'})
-    // .next(function(error, done) {
-    //     if(done) {
-    //         announcements.drop()
-    //         .then(() => console.log('Announcement table dropped succesfully!'))
-    //         .catch(error => output(error));
-    //     }
-    // });
 
     const options = { ordered: true };
     announcements.insertMany(existedAnnouncements, options)
