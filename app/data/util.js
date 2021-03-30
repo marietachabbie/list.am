@@ -1,5 +1,3 @@
-const mongodb = require('mongodb');
-
 const assignId = (annList, startNumber = 15737110) => {
     annList.forEach(obj => obj['postNumber'] = startNumber++);
 };
