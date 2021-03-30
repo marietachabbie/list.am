@@ -3,7 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser')
 const morgan = require('morgan');
 require('dotenv').config();
-const createAndInsertAnnouncements = require('./models/Announcements');
+const createAnnouncements = require('./models/Announcements');
 const util = require('./data/util');
 const output = util.output;
 
@@ -27,11 +27,15 @@ const main = () => {
     app.get('/', function (req, res) {
         res.sendFile(path + "index.html");
     });
+    
     const client = require('./data/client');
     client.connect()
-    .then(() => createAndInsertAnnouncements(client))
+    .then(() => console.log('Succesfully conected to DB.'))
+    // .then(() => createAnnouncements(client))
     .catch (error => output(error))
-    .finally(() => app.listen(3000));
+    .finally(() => {
+        app.listen(3000)
+    });
 }
 
 main();
