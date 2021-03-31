@@ -1,10 +1,10 @@
 const util = require('../data/util');
-const currentNumberOfAnnouncements = util.currentNumberOfAnnouncements;
 const existedAnnouncements = require('../data/existedAnnouncements');
 const output = util.output;
-const assignAnnouncementNumber = util.assignAnnouncementNumber;
+const assignId = util.assignId;
 
-assignAnnouncementNumber(existedAnnouncements, currentNumberOfAnnouncements);
+assignId(existedAnnouncements);
+
 const createCollection = (client) => {
     const db = client.db("ListamDB");
     const announcements = db.collection("announcements");

@@ -30,7 +30,7 @@ const main = () => {
     
     const client = require('./data/client');
     client.connect()
-    .then(() => console.log('Succesfully conected to DB.'))
+    .then(() => console.log('Succesfully connected to DB.'))
     // .then(() => createAnnouncements(client))
     .catch (error => output(error))
     .finally(() => {
