@@ -5,8 +5,7 @@ class MongoDbConnection {
         const connectionOptions = {
             useUnifiedTopology: true,
             useNewUrlParser: true,
-            keepAlive: true,
-            // reconnectTries: 5 -> (node:44427) DeprecationWarning: The option `reconnectTries` is incompatible with the unified topology, please read more by visiting http://bit.ly/2D8WfT6
+            keepAlive: true
         };
 
         const client = new MongoClient(
