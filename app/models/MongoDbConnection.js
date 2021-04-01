@@ -1,22 +1,13 @@
-const { MongoClient } = require('mongodb');
+const Client = require('./class-methods/Client');
 
 class MongoDbConnection {
-    static exec(connection_URI){
-        const connectionOptions = {
-            useUnifiedTopology: true,
-            useNewUrlParser: true,
-            keepAlive: true
-        };
-
-        const client = new MongoClient(
-            connection_URI,
-            connectionOptions
-        );
+    static init(){
+        const client = Client.init();
 
         client.on('serverOpening', () => this.onServerOpening());
         client.on('serverClosed', () => this.onServerClosing());
 
-        client.connect()
+        return client.connect()
         .catch((error) => this.catchConnectionError(error));
     }
 

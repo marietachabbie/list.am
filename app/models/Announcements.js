@@ -6,10 +6,10 @@ const assignId = util.assignId;
 assignId(existedAnnouncements);
 
 const createCollection = (client) => {
-    const db = client.db("ListamDB");
-    const announcements = db.collection("announcements");
+    const db = client.db('ListamDB');
+    const announcements = db.collection('announcements');
     announcements.drop()
-    .then(console.log('Announcement table dropped succesfully! '))
+    .then(console.log('Announcement table dropped succesfully!'))
     .catch(error => output(error));
 
     const options = { ordered: true };

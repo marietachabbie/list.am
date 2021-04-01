@@ -29,13 +29,10 @@ const main = () => {
         res.sendFile(path + "index.html");
     });
     
-    MongoDbConnection.exec(process.env.URI)
-    app.listen(3000);
-    // .then(() => {
-    //     app.listen(3000);
-    // })
-    // // .then(() => createAnnouncements(client))
-    // .catch (error => output(error));
+    MongoDbConnection.init()
+    .then(() => app.listen(3000))
+    // .then(() => createAnnouncements(client))
+    .catch (error => output(error));
 }
 
 main();

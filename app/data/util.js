@@ -1,4 +1,3 @@
-require('console-info');
 require('console-error');
 require('console-warn');
 
@@ -15,8 +14,7 @@ const assignId = (annList, startNumber = 15737110) => {
 //   var gen = idMaker();
 
 const output = (error) => {
-    console.error(error.name);
-    console.error(error.message);
+    console.error(`There is a ${error.name} \n${error.message}`);
 };
 
 module.exports = {
