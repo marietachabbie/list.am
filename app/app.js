@@ -10,6 +10,7 @@ const output = util.output;
 const app = express();
 
 const postRouts = require('./routes/antiquities');
+const MongoDbConnection = require('./models/MongoDbConnection');
 app.use('/antiquities', postRouts);
 
 const path = __dirname + '/views/';
@@ -28,14 +29,13 @@ const main = () => {
         res.sendFile(path + "index.html");
     });
     
-    const client = require('./data/client');
-    client.connect()
-    .then(() => console.log('Succesfully connected to DB.'))
-    // .then(() => createAnnouncements(client))
-    .catch (error => output(error))
-    .finally(() => {
-        app.listen(3000)
-    });
+    MongoDbConnection.exec(process.env.URI)
+    app.listen(3000);
+    // .then(() => {
+    //     app.listen(3000);
+    // })
+    // // .then(() => createAnnouncements(client))
+    // .catch (error => output(error));
 }
 
 main();

@@ -14,5 +14,10 @@
     "express": "^4.17.1",
     "mongoose": "^5.11.15",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "console-error": "0.0.4",
+    "console-info": "0.0.5",
+    "console-warn": "0.0.4"
   }
 }
