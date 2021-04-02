@@ -24,8 +24,7 @@ class MongoDbConnection {
 
         return client.connect()
         .then(() => {
-            this.cursor = client.db('ListamDB').collection('announcements');
-            // app.locals.announcementsCursor = cursor;
+            this.announcementsCollection = client.db('ListamDB').collection('announcements');
         })
         .catch((error) => this.catchConnectionError(error));
     }
