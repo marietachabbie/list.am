@@ -1,14 +1,37 @@
-const Client = require('./class-methods/Client');
+const { MongoClient } = require('mongodb');
+const express = require('express');
+const app = express();
 
 class MongoDbConnection {
+    static getClient(){
+        const connectionOptions = {
+            useUnifiedTopology: true,
+            useNewUrlParser: true,
+            keepAlive: true
+        };
+
+        return new MongoClient(
+            process.env.URI,
+            connectionOptions
+        );
+    }
+
     static init(){
-        const client = Client.init();
+        const client = this.getClient();
 
         client.on('serverOpening', () => this.onServerOpening());
         client.on('serverClosed', () => this.onServerClosing());
 
         return client.connect()
+        .then(() => {
+            this.cursor = client.db('ListamDB').collection('announcements');
+            // app.locals.announcementsCursor = cursor;
+        })
         .catch((error) => this.catchConnectionError(error));
+    }
+
+    static getCollection(){
+        this.init();
     }
 
     static onServerOpening(){

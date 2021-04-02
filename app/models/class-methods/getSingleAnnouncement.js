@@ -1,5 +1,4 @@
 const output = require('../../data/util').output;
-const CollectionAnnouncements = require('./CollectionAnnouncements');
 
 const getSingleAnnouncements = (id) => {
     const objectID = new mongodb.ObjectID(id);
@@ -9,8 +8,6 @@ const getSingleAnnouncements = (id) => {
 }
 
 module.exports = getSingleAnnouncements;
-
-
 
 // loadSingleAnnouncement: async (id) => {
 //     try {

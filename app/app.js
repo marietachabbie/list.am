@@ -30,12 +30,12 @@ const main = () => {
     });
     
     MongoDbConnection.init()
-    .then(() => app.listen(3000))
     // .then(() => createAnnouncements(client))
+    .then(() => app.listen(3000))
     .catch (error => output(error));
 }
 
-main();
+main()
 
 // 404
 app.use((req, res) => {

@@ -9,10 +9,10 @@ router.get('/', (req, res, next) => {
     .catch(next);
 })
 
-router.get('/:id', (req, res, next) => {
-    return getSingleAnnouncement(req.params.id)
-    .then(specific => res.send(specific))
-    .catch(next);
-})
+// router.get('/:id', (req, res, next) => {
+//     return getSingleAnnouncement(req.params.id)
+//     .then(specific => res.send(specific))
+//     .catch(next);
+// })
 
 module.exports = router;
