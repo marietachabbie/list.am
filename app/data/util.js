@@ -14,7 +14,7 @@ const assignId = (annList, startNumber = 15737110) => {
 //   var gen = idMaker();
 
 const output = (error) => {
-    console.error(`There is a ${error.name} \n${error.message}`);
+    console.error(`There is a ${error.name}\n${error.message}`);
 };
 
 module.exports = {
