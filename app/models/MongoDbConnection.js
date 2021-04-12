@@ -1,6 +1,4 @@
 const { MongoClient } = require('mongodb');
-const express = require('express');
-const app = express();
 
 class MongoDbConnection {
     static getClient(){
@@ -23,9 +21,7 @@ class MongoDbConnection {
         client.on('serverClosed', () => this.onServerClosing());
 
         return client.connect()
-        .then(() => {
-            this.announcementsCollection = client.db('ListamDB').collection('announcements');
-        })
+        .then(() => { this.announcementsCollection = client.db('ListamDB').collection('announcements') })
         .catch((error) => this.catchConnectionError(error));
     }
 
