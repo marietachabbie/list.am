@@ -6,19 +6,19 @@ require('dotenv').config();
 const createAnnouncements = require('./models/Announcements');
 const util = require('./data/util');
 const output = util.output;
-
 const app = express();
-
 const postRouts = require('./routes/antiquities');
 const MongoDbConnection = require('./models/MongoDbConnection');
+const path = __dirname + '/views/';
+
 app.use('/antiquities', postRouts);
 
-const path = __dirname + '/views/';
 app.use(express.static(path));
-var corsOptions = {
-    origin: "http://localhost:8081"
-};
-app.use(cors(corsOptions));
+// var corsOptions = {
+//     origin: "http://localhost:8081"
+// };
+app.use(cors());
+// app.use(cors(corsOptions));
 
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -31,11 +31,11 @@ const main = () => {
     
     MongoDbConnection.init()
     // .then(() => createAnnouncements(client))
-    .then(() => app.listen(3000))
+    .then(() => app.listen(3030))
     .catch (error => output(error));
 }
 
-main()
+main();
 
 // 404
 app.use((req, res) => {
