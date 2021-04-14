@@ -1,5 +1,5 @@
-const util = require('../data/util');
-const existedAnnouncements = require('../data/existedAnnouncements');
+const util = require('../helpers/util');
+const existedAnnouncements = require('../helpers/existedAnnouncements');
 const output = util.output;
 const assignId = util.assignId;
 

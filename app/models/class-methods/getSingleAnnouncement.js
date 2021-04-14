@@ -1,4 +1,4 @@
-const output = require('../../data/util').output;
+const output = require('../../helpers/util').output;
 const mongodb = require('mongodb');
 const MongoDbConnection = require('../MongoDbConnection');
 

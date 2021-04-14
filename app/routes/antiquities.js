@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const schema = require('../data/JoiValidatorSchema');
+const schema = require('../helpers/JoiValidatorSchema');
 const getAnnouncements = require('../models/class-methods/getAnnouncements');
 const getSingleAnnouncement = require('../models/class-methods/getSingleAnnouncement');
 

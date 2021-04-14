@@ -4,7 +4,7 @@ const bodyParser = require('body-parser')
 const morgan = require('morgan');
 require('dotenv').config();
 const createAnnouncements = require('./models/Announcements');
-const util = require('./data/util');
+const util = require('./helpers/util');
 const output = util.output;
 const app = express();
 const postRouts = require('./routes/antiquities');
