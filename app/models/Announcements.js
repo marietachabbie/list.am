@@ -5,6 +5,8 @@ const assignId = util.assignId;
 
 assignId(existedAnnouncements);
 
+
+
 const createCollection = (client) => {
     const db = client.db('ListamDB');
     const announcements = db.collection('announcements');
