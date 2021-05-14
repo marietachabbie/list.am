@@ -3,6 +3,10 @@ The script creates a collection with MongoDB on AWS, inserts data of announcemen
 
 ```sh
 cd app
+```
+```sh
 npm i
+```
+```sh
 node app.js
 ```
