@@ -4,9 +4,11 @@ The script creates a collection with MongoDB on AWS, inserts data of announcemen
 ```sh
 cd app
 ```
+Dependencies:
 ```sh
 npm i
 ```
+Run the app:
 ```sh
 node app.js
 ```
